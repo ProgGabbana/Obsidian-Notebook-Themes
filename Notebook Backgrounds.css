@@ -186,7 +186,7 @@ https://angel-rs.github.io/css-color-filter-generator
     .pen-purple
   )
   :is(.callout > .callout-title, svg) {
-  color: color-mix(in srgb, var(--accent-color) 60%, transparent) ;
+  color: color-mix(in srgb, var(--accent-color) 60%, transparent);
 }
 
 /* Code Blocks */
@@ -209,7 +209,7 @@ https://angel-rs.github.io/css-color-filter-generator
 
 :is(.pen-white, .pen-blue, .pen-red, .pen-green, .pen-black, .pen-gray, .pen-purple):not(.page-manila):not(.page-white):not(.page-blueprint) :is(code, .HyperMD-codeblock, .cm-inline-code) {
   --code-normal: var(--accent-color);
-  --code-background: color-mix(in srgb, var(--background-primary, #ffffff) 80%, black) !important;
+  
 }
 
 /* Tables */
