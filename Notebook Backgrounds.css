@@ -213,6 +213,12 @@ https://angel-rs.github.io/css-color-filter-generator
   --code-background: color-mix(in srgb, var(--background-primary, #ffffff) 80%, black) !important;
 }
 
+/* Tables */
+:is(.pen-white, .pen-blue, .pen-red, .pen-green, .pen-black, .pen-gray, .pen-purple) table th {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
 /* ------------------------------- Pen Colors ------------------------------- */
 
 .pen-white {
