@@ -189,6 +189,10 @@ https://angel-rs.github.io/css-color-filter-generator
   color: color-mix(in srgb, var(--accent-color) 60%, transparent);
 }
 
+.callout {
+    --callout-blend-mode: normal; 
+}
+
 /* Code Blocks */
 :is(.page-white, .page-manila, .page-blueprint) :is(code,
 .HyperMD-codeblock, .cm-inline-code) {
