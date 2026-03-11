@@ -69,7 +69,7 @@ https://angel-rs.github.io/css-color-filter-generator
   --checklist-done-color: var(--accent-color);
   --list-marker-color: var(--accent-color);
 
-/* Fix for callout appearance on custom backgrounds */
+/* Fix for callout appearance on custom backgrounds in Reading Mode */
   --callout-blend-mode: normal;
   
   --interactive-accent: var(--accent-color);
