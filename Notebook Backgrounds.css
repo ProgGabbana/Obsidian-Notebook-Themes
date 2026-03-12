@@ -75,6 +75,7 @@ https://angel-rs.github.io/css-color-filter-generator
   --interactive-accent: var(--accent-color);
   --metadata-label-text-color: var(--accent-color);
   --metadata-input-text-color: var(--accent-color);
+  --metadata-input-background-active: var(--accent-color-trans);
   --tag-color: var(--accent-color);
   --tag-background: var(--accent-color-trans);
   --pill-cover-hover: color-mix(in srgb, var(--accent-color) 60%, transparent);
@@ -88,7 +89,6 @@ https://angel-rs.github.io/css-color-filter-generator
 
   color: var(--accent-color);
   background-color: var(--page-color);
-  font-weight: bold;
 }
 
 /* ----------------------- Manila/Tan Page Background ----------------------- */
@@ -188,7 +188,7 @@ https://angel-rs.github.io/css-color-filter-generator
     .pen-gray,
     .pen-purple
   )
-  svg {
+  :is(.callout > .callout-title, svg) {
   color: color-mix(in srgb, var(--accent-color) 60%, transparent);
 }
 
@@ -202,7 +202,7 @@ https://angel-rs.github.io/css-color-filter-generator
     black
   ) !important;
 }
-div > pre {
+:is(.page-white, .page-manila, .page-blueprint) div > pre {
   --code-background: color-mix(
     in srgb,
     var(--page-color) 80%,
@@ -210,8 +210,14 @@ div > pre {
   ) !important;
 }
 
-:is(.page-white, .page-manila, .page-blueprint) {
-  --metadata-input-background-active: var(--accent-color-trans);
+:is(.pen-white, .pen-blue, .pen-red, .pen-green, .pen-black, .pen-gray, .pen-purple):not(.page-manila):not(.page-white):not(.page-blueprint) :is(code, .HyperMD-codeblock, .cm-inline-code) {
+  --code-normal: var(--accent-color);
+}
+
+/* Tables */
+:is(.pen-white, .pen-blue, .pen-red, .pen-green, .pen-black, .pen-gray, .pen-purple) table th {
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 /* ------------------------------- Pen Colors ------------------------------- */
